@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+:root {
+    --brown: #dbb89a;
+    --playfair: 'Playfair Display', serif;
+    --green: #42b153;
+}
+
+.heading {
+    font-family: var(--playfair);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+section.product-slider {
+    position: relative;
+    z-index: 4;
+}
+
+.btn-2 {
+    border: 2px solid var(--green);
+    background: var(--green);
+    border-radius: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    align-items: center;
+    color: #fff;
+    padding: 8px 30px;
+}
+
+.btn-2:hover {
+    transition: all 0.5s ease;
+    background: transparent;
+    color: #000;
+}
+
+section.product-slider:before {
+    height: 100%;
+    width: 58%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: var(--brown);
+    content: '';
+}
+
+section.product-slider:after {
+    height: 60%;
+    width: 20%;
+    left: 2%;
+    bottom: 0;
+    position: absolute;
+    content: '';
+    border-left: 30px solid var(--brown);
+    border-bottom: 30px solid var(--brown);
+    z-index: 1;
+}
+
+.product-slider-text {
+    position: relative;
+    z-index: 4;
+}
+
+button.owl-prev:hover,
+button.owl-next:hover {
+    background: transparent !important;
+}
+
+section.product-slider .owl-nav {
+    position: absolute;
+    margin: 0 !important;
+    bottom: 27%;
+    left: -100%;
+}
+
+.product-slider-inner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+
+section.product-slider .row {
+    align-items: center;
+}
+
+.slider-absolute h1.heading {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.slider-absolute p {
+    font-size: 18px;
+}
+
+.social-links {
+    position: fixed;
+    z-index: 10;
+    top: 30%;
+    right: 0%;
+    background: var(--green);
+    height: 30%;
+    width: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-links ul li {
+    list-style-type: none;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+.social-links ul li a {
+    color: #fff;
+    line-height: 19px;
+}
+
+.social-links ul li a i {
+    font-size: 16px;
+}
+
+.social-links ul li:last-child {
+    margin: 0;
+}
+
+section.simple-text p {
+    font-size: 18px;
+    margin: 0;
+}
+
+section.product-sec .row {
+    align-items: center;
+}
+
+.product-sec-text h1.heading {
+    font-size: 47px;
+    margin-bottom: 30px;
+}
+
+.product-sec-text p span {
+    font-weight: 600;
+}
+
+section.product-sec {
+    position: relative;
+}
+
+section.product-sec:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    background: var(--brown);
+    top: 0;
+    left: 0;
+    border-radius: 200px 0px 200px 0px;
+}
+
+.btn-1 {
+    border: 2px solid var(--green);
+    border-radius: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    align-items: center;
+    padding: 8px 30px;
+}
+
+.btn-1 img {
+    transform: rotate(180deg);
+    position: absolute;
+    left: -18%;
+}
+
+.btn-1:hover {
+    background: var(--green);
+    transition: all 0.5s ease;
+}
+
+.btn-1:hover img {
+    transition: all 0.5s ease;
+    left: -22%;
+}
+
+.btn-1 span {
+    font-weight: 500;
+}
+
+section.product-benefit {
+    padding-bottom: 80px;
+    background-image: url('../images/slider-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 95% 0%;
+}
+
+section.product-benefit h1.heading {
+    font-size: 47px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+
+.product-benefit-inner {
+    box-shadow: 0px 0px 25px lightgray;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 2px solid transparent;
+}
+
+.product-benefit-inner h3.benefit-no {
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    white-space: normal;
+    font-size: 55px;
+    margin: 0;
+}
+
+.product-benefit-inner p {
+    font-size: 18px;
+}
+
+.product-benefit-inner:hover {
+    border: 2px solid var(--green);
+    transition: all 0.5s ease;
+}
+
+.product-benefit-inner:hover h3.benefit-no {
+    -webkit-text-stroke-color: var(--green);
+    -webkit-text-fill-color: var(--green);
+    transition: all 0.5s ease;
+}
